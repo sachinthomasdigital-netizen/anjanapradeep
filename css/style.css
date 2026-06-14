@@ -179,53 +179,19 @@ nav{
 
 .about-section{
     display:flex;
-    align-items:center;
     justify-content:space-between;
+    align-items:center;
     gap:80px;
 }
 
 .about-content{
-    flex:1;
-}
-
-.about-content h2{
-    color:var(--primary);
-    font-size:48px;
-    margin-bottom:25px;
-}
-
-.about-content p{
-    font-size:18px;
-    line-height:1.9;
-    margin-bottom:30px;
-}
-
-.about-btn{
-    display:inline-block;
-    background:var(--primary);
-    color:#fff;
-    text-decoration:none;
-    padding:15px 35px;
-    border-radius:8px;
-    font-weight:700;
-    transition:0.3s;
-}
-
-.about-btn:hover{
-    background:#056837;
+    width:55%;
 }
 
 .about-image{
-    flex:1;
-    text-align:right;
-}
-
-.about-image img{
-    width:450px;
-    height:550px;
-    object-fit:cover;
-    border-radius:20px;
-    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+    width:45%;
+    display:flex;
+    justify-content:center;
 }
 
 /* ==========================
