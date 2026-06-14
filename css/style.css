@@ -12,7 +12,7 @@
 }
 
 body{
-    font-family:Arial,sans-serif;
+    font-family:Arial, sans-serif;
     color:var(--dark);
     line-height:1.7;
 }
@@ -23,14 +23,17 @@ body{
     margin:auto;
 }
 
-/* NAVBAR */
+/* ==========================
+   NAVIGATION
+========================== */
 
 nav{
     background:var(--primary);
-    padding:20px 40px;
+    height:80px;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    padding:0 40px;
 }
 
 .logo{
@@ -38,6 +41,7 @@ nav{
     text-decoration:none;
     font-size:24px;
     font-weight:700;
+    letter-spacing:1px;
 }
 
 .menu{
@@ -56,30 +60,30 @@ nav{
     color:var(--gold);
 }
 
-/* HERO */
+/* ==========================
+   HERO SECTION
+========================== */
 
 .hero{
     min-height:100vh;
+    display:flex;
+    align-items:center;
 
     background:
     linear-gradient(
-        rgba(6,126,68,0.65),
-        rgba(6,126,68,0.65)
+        rgba(6,126,68,0.70),
+        rgba(6,126,68,0.70)
     ),
     url("../banner.png (2).jpg");
 
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-
-    display:flex;
-    align-items:center;
 }
 
 .hero-content{
     max-width:650px;
-    color:white;
-    padding:60px 0;
+    color:#fff;
 }
 
 .badge{
@@ -88,6 +92,7 @@ nav{
     padding:12px 25px;
     border-radius:50px;
     margin-bottom:25px;
+    font-size:14px;
 }
 
 .hero h1{
@@ -104,10 +109,11 @@ nav{
 .hero p{
     font-size:20px;
     margin-bottom:35px;
-    max-width:600px;
 }
 
-/* BUTTONS */
+/* ==========================
+   BUTTONS
+========================== */
 
 .hero-buttons{
     display:flex;
@@ -124,30 +130,31 @@ nav{
 }
 
 .hero-buttons a:first-child{
-    background:white;
+    background:#fff;
     color:var(--primary);
 }
 
 .hero-buttons a:first-child:hover{
-    background:#f1f1f1;
+    background:#f3f3f3;
 }
 
 .hero-buttons a:last-child{
-    border:2px solid white;
-    color:white;
+    border:2px solid #fff;
+    color:#fff;
 }
 
 .hero-buttons a:last-child:hover{
-    background:white;
+    background:#fff;
     color:var(--primary);
 }
 
-/* STATS */
+/* ==========================
+   STATS
+========================== */
 
 .hero-stats{
     display:flex;
     gap:60px;
-    flex-wrap:wrap;
 }
 
 .stat h3{
@@ -157,11 +164,13 @@ nav{
 }
 
 .stat p{
-    color:white;
+    color:#fff;
     font-size:16px;
 }
 
-/* ABOUT */
+/* ==========================
+   ABOUT SECTION
+========================== */
 
 .about-preview{
     padding:100px 0;
@@ -181,8 +190,8 @@ nav{
 
 .about-content h2{
     color:var(--primary);
-    font-size:42px;
-    margin-bottom:20px;
+    font-size:48px;
+    margin-bottom:25px;
 }
 
 .about-content p{
@@ -196,14 +205,14 @@ nav{
     background:var(--primary);
     color:#fff;
     text-decoration:none;
-    padding:14px 30px;
+    padding:15px 35px;
     border-radius:8px;
     font-weight:700;
     transition:0.3s;
 }
 
 .about-btn:hover{
-    background:#045f33;
+    background:#056837;
 }
 
 .about-image{
@@ -212,43 +221,86 @@ nav{
 }
 
 .about-image img{
-    width:100%;
-    max-width:420px;
-    height:520px;
+    width:450px;
+    height:550px;
     object-fit:cover;
     border-radius:20px;
-    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
 }
 
-/* OTHER SECTIONS */
+/* ==========================
+   IMPACT
+========================== */
 
-.impact,
-.media,
-.collaboration{
+.impact{
+    padding:100px 20px;
+    text-align:center;
+    background:#f8f8f8;
+}
+
+.impact h2{
+    color:var(--primary);
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.impact p{
+    max-width:900px;
+    margin:auto;
+    font-size:18px;
+}
+
+/* ==========================
+   MEDIA
+========================== */
+
+.media{
     padding:100px 20px;
     text-align:center;
 }
 
-.impact h2,
-.media h2,
-.collaboration h2{
+.media h2{
     color:var(--primary);
+    font-size:42px;
     margin-bottom:20px;
-    font-size:40px;
 }
 
-.impact p,
-.media p,
+.media p{
+    max-width:900px;
+    margin:auto;
+    font-size:18px;
+}
+
+/* ==========================
+   COLLABORATION
+========================== */
+
+.collaboration{
+    padding:100px 20px;
+    text-align:center;
+    background:#f8f8f8;
+}
+
+.collaboration h2{
+    color:var(--primary);
+    font-size:42px;
+    margin-bottom:20px;
+}
+
 .collaboration p{
     max-width:900px;
     margin:auto;
+    margin-bottom:30px;
+    font-size:18px;
 }
 
-/* FOOTER */
+/* ==========================
+   FOOTER
+========================== */
 
 footer{
     background:var(--primary);
-    color:white;
+    color:#fff;
     text-align:center;
     padding:50px 20px;
 }
@@ -261,13 +313,15 @@ footer p{
     margin:8px 0;
 }
 
-/* MOBILE */
+/* ==========================
+   MOBILE
+========================== */
 
 @media(max-width:768px){
 
     nav{
         flex-direction:column;
-        gap:15px;
+        height:auto;
         padding:20px;
     }
 
@@ -275,6 +329,7 @@ footer p{
         flex-wrap:wrap;
         justify-content:center;
         gap:15px;
+        margin-top:15px;
     }
 
     .hero{
@@ -296,7 +351,6 @@ footer p{
 
     .hero p{
         font-size:16px;
-        max-width:100%;
     }
 
     .hero-buttons{
@@ -324,7 +378,11 @@ footer p{
     }
 
     .about-image img{
-        max-width:300px;
+        width:300px;
         height:380px;
+    }
+
+    .about-content h2{
+        font-size:36px;
     }
 }
