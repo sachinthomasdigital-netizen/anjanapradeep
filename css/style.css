@@ -31,12 +31,14 @@ nav{
     background:var(--primary);
     height:80px;
     display:flex;
-    justify-content:space-between;
     align-items:center;
+    position:relative;
     padding:0 40px;
 }
 
 .logo{
+    position:absolute;
+    left:30px;
     color:#fff;
     text-decoration:none;
     font-size:24px;
@@ -45,8 +47,12 @@ nav{
 }
 
 .menu{
+    width:100%;
     display:flex;
-    gap:30px;
+    justify-content:center;
+    align-items:center;
+    gap:35px;
+    padding-left:250px;
 }
 
 .menu a{
@@ -111,6 +117,10 @@ nav{
     margin-bottom:35px;
 }
 
+/* ==========================
+   BUTTONS
+========================== */
+
 .hero-buttons{
     display:flex;
     gap:20px;
@@ -135,9 +145,18 @@ nav{
     color:#fff;
 }
 
-.hero-buttons a:hover{
-    transform:translateY(-2px);
+.hero-buttons a:first-child:hover{
+    background:#f5f5f5;
 }
+
+.hero-buttons a:last-child:hover{
+    background:#fff;
+    color:var(--primary);
+}
+
+/* ==========================
+   STATS
+========================== */
 
 .hero-stats{
     display:flex;
@@ -172,6 +191,7 @@ nav{
 
 .about-content{
     flex:1;
+    text-align:left;
 }
 
 .about-content h2{
@@ -191,29 +211,28 @@ nav{
     background:var(--primary);
     color:#fff;
     text-decoration:none;
-    padding:15px 35px;
+    padding:14px 35px;
     border-radius:8px;
     font-weight:700;
     transition:0.3s;
 }
 
 .about-btn:hover{
-    background:#056837;
+    background:#045c32;
 }
 
 .about-image{
     flex:1;
     display:flex;
     justify-content:center;
-    align-items:center;
 }
 
 .about-image img{
-    width:420px;
-    height:520px;
+    width:400px;
+    height:400px;
     object-fit:cover;
     border-radius:20px;
-    box-shadow:0 15px 35px rgba(0,0,0,0.20);
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
 }
 
 /* ==========================
@@ -235,7 +254,6 @@ nav{
 .impact p{
     max-width:900px;
     margin:auto;
-    font-size:18px;
 }
 
 /* ==========================
@@ -256,7 +274,6 @@ nav{
 .media p{
     max-width:900px;
     margin:auto;
-    font-size:18px;
 }
 
 /* ==========================
@@ -279,7 +296,6 @@ nav{
     max-width:900px;
     margin:auto;
     margin-bottom:30px;
-    font-size:18px;
 }
 
 /* ==========================
@@ -313,11 +329,16 @@ footer p{
         padding:20px;
     }
 
+    .logo{
+        position:static;
+        margin-bottom:15px;
+    }
+
     .menu{
+        padding-left:0;
         flex-wrap:wrap;
         justify-content:center;
         gap:15px;
-        margin-top:15px;
     }
 
     .hero{
@@ -347,8 +368,8 @@ footer p{
 
     .hero-stats{
         flex-direction:column;
-        text-align:center;
         gap:25px;
+        text-align:center;
     }
 
     .about-section{
@@ -360,12 +381,12 @@ footer p{
         text-align:center;
     }
 
-    .about-content h2{
-        font-size:36px;
+    .about-image img{
+        width:280px;
+        height:280px;
     }
 
-    .about-image img{
-        width:300px;
-        height:380px;
+    .about-content h2{
+        font-size:36px;
     }
 }
