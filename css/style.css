@@ -52,13 +52,13 @@ nav{
     justify-content:center;
     align-items:center;
     gap:50px;
-    padding-left:250px;
+    padding-left:150px;
 }
 
 .menu a{
     color:#fff;
     text-decoration:none;
-    font-weight:600;
+    font-weight:800;
     transition:0.3s;
 }
 
