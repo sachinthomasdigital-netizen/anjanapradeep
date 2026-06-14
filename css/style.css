@@ -1,7 +1,3 @@
-/* =========================
-   GLOBAL
-========================= */
-
 :root{
     --primary:#067E44;
     --secondary:#3B986F;
@@ -22,9 +18,7 @@ body{
     line-height:1.7;
 }
 
-/* =========================
-   CONTAINER
-========================= */
+/* CONTAINER */
 
 .container{
     width:90%;
@@ -32,25 +26,19 @@ body{
     margin:auto;
 }
 
-/* =========================
-   NAVIGATION
-========================= */
+/* NAVIGATION */
 
 nav{
-    background:#067E44;
+    background:var(--primary);
     height:80px;
     display:flex;
     align-items:center;
-    justify-content:center;
-    position:sticky;
-    top:0;
-    z-index:1000;
+    justify-content:space-between;
+    padding:0 40px;
 }
 
 .logo{
-    position:absolute;
-    left:40px;
-    color:white;
+    color:#fff;
     text-decoration:none;
     font-size:20px;
     font-weight:700;
@@ -59,36 +47,34 @@ nav{
 
 .menu{
     display:flex;
-    gap:35px;
+    gap:30px;
 }
 
 .menu a{
-    color:white;
+    color:#fff;
     text-decoration:none;
     font-weight:600;
-    transition:0.3s;
+    transition:.3s;
 }
 
 .menu a:hover{
-    color:#FFD700;
+    color:var(--gold);
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+/* HERO */
 
 .hero{
     min-height:100vh;
 
     background:
     linear-gradient(
-        rgba(6,126,68,0.70),
-        rgba(6,126,68,0.70)
+        rgba(6,126,68,0.65),
+        rgba(6,126,68,0.65)
     ),
-    url("../banner.jpg");
+    url("../banner.png (2).jpg");
 
     background-size:cover;
-    background-position:right center;
+    background-position:center;
     background-repeat:no-repeat;
 
     display:flex;
@@ -97,17 +83,15 @@ nav{
 
 .hero-content{
     max-width:650px;
-    color:white;
-    text-align:left;
+    color:#fff;
 }
 
 .badge{
     display:inline-block;
-    background:rgba(255,255,255,0.15);
     padding:12px 25px;
     border-radius:50px;
+    background:rgba(255,255,255,0.15);
     margin-bottom:25px;
-    font-size:14px;
 }
 
 .hero h1{
@@ -123,41 +107,36 @@ nav{
 
 .hero p{
     font-size:20px;
-    line-height:1.8;
     margin-bottom:35px;
 }
 
-/* =========================
-   BUTTONS
-========================= */
+/* BUTTONS */
 
 .hero-buttons{
     display:flex;
-    gap:20px;
+    gap:15px;
     margin-top:20px;
     margin-bottom:60px;
 }
 
 .hero-buttons a{
-    text-decoration:none;
     padding:15px 35px;
     border-radius:50px;
+    text-decoration:none;
     font-weight:700;
 }
 
 .hero-buttons a:first-child{
-    background:white;
-    color:#067E44;
+    background:#fff;
+    color:var(--primary);
 }
 
 .hero-buttons a:last-child{
-    border:2px solid white;
-    color:white;
+    border:2px solid #fff;
+    color:#fff;
 }
 
-/* =========================
-   STATS
-========================= */
+/* STATS */
 
 .hero-stats{
     display:flex;
@@ -165,18 +144,15 @@ nav{
 }
 
 .stat h3{
-    color:#FFD700;
-    font-size:52px;
-    margin-bottom:10px;
+    color:var(--gold);
+    font-size:50px;
 }
 
 .stat p{
-    color:white;
+    color:#fff;
 }
 
-/* =========================
-   CONTENT SECTIONS
-========================= */
+/* SECTIONS */
 
 .about-preview,
 .impact,
@@ -190,8 +166,7 @@ nav{
 .impact h2,
 .media h2,
 .collaboration h2{
-    color:#067E44;
-    font-size:42px;
+    color:var(--primary);
     margin-bottom:20px;
 }
 
@@ -206,61 +181,44 @@ nav{
 .about-preview a{
     display:inline-block;
     margin-top:20px;
-    color:#067E44;
+    color:var(--primary);
     text-decoration:none;
     font-weight:700;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
-    background:#067E44;
-    color:white;
+    background:var(--primary);
+    color:#fff;
     text-align:center;
     padding:50px 20px;
 }
 
-footer h3{
-    margin-bottom:10px;
-}
-
-footer p{
-    margin:8px 0;
-}
-
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media(max-width:768px){
 
     nav{
-        height:auto;
         flex-direction:column;
+        height:auto;
         padding:20px;
-    }
-
-    .logo{
-        position:static;
-        margin-bottom:15px;
     }
 
     .menu{
         flex-wrap:wrap;
         justify-content:center;
+        margin-top:15px;
         gap:15px;
     }
 
     .hero{
-        background-position:center;
         text-align:center;
+        background-position:center;
     }
 
     .hero-content{
         max-width:100%;
-        text-align:center;
     }
 
     .hero h1{
@@ -282,7 +240,7 @@ footer p{
 
     .hero-stats{
         flex-direction:column;
-        gap:25px;
         text-align:center;
+        gap:25px;
     }
 }
