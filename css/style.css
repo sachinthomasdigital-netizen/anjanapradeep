@@ -1,4 +1,3 @@
-```css
 :root{
     --primary:#067E44;
     --secondary:#3B986F;
@@ -32,21 +31,30 @@ body{
 nav{
     background:var(--primary);
     padding:18px 40px;
-    text-align:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
     position:sticky;
     top:0;
     z-index:1000;
 }
 
-nav a{
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.menu a{
     color:white;
     text-decoration:none;
-    margin:0 18px;
+    margin-left:25px;
     font-weight:600;
     transition:0.3s;
 }
 
-nav a:hover{
+.menu a:hover{
     color:var(--gold);
 }
 
@@ -169,7 +177,7 @@ nav a:hover{
     font-size:18px;
 }
 
-/* Content Sections */
+/* Sections */
 
 .about-preview,
 .impact,
@@ -216,8 +224,8 @@ footer{
 }
 
 footer h3{
-    margin-bottom:10px;
     font-size:30px;
+    margin-bottom:10px;
 }
 
 footer p{
@@ -229,12 +237,18 @@ footer p{
 @media(max-width:768px){
 
     nav{
+        flex-direction:column;
+        gap:15px;
         padding:15px;
     }
 
-    nav a{
+    .menu{
+        text-align:center;
+    }
+
+    .menu a{
         display:inline-block;
-        margin:8px;
+        margin:6px 10px;
         font-size:14px;
     }
 
@@ -271,4 +285,3 @@ footer p{
         font-size:30px;
     }
 }
-```
