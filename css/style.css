@@ -490,13 +490,15 @@ footer p{
     background:#fff;
     border-radius:20px;
     overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    min-height:500px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
 .story-image img{
     width:100%;
-    display:block;
+    height:500px;
     object-fit:cover;
+    display:block;
 }
 
 .story-content{
