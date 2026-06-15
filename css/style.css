@@ -452,3 +452,94 @@ footer p{
         font-size:36px;
     }
 }
+/* ==========================
+   JOURNEY STORY SECTION
+========================== */
+
+.journey-story{
+    background:#f5f6f8;
+    padding:120px 0;
+}
+
+.story-tag{
+    color:#f59e0b;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+.journey-story h2{
+    font-size:56px;
+    line-height:1.2;
+    margin:20px 0 50px;
+}
+
+.journey-story h2 span{
+    color:var(--primary);
+}
+
+.story-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:start;
+}
+
+.story-image{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.story-image img{
+    width:100%;
+    display:block;
+    object-fit:cover;
+}
+
+.story-content{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.story-item{
+    padding-bottom:30px;
+    border-bottom:1px solid #ddd;
+}
+
+.story-item:last-child{
+    border-bottom:none;
+}
+
+.story-item span{
+    color:#f59e0b;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.story-item h3{
+    margin:12px 0;
+    font-size:28px;
+    color:var(--dark);
+}
+
+.story-item p{
+    color:var(--text);
+    line-height:1.9;
+}
+
+@media(max-width:768px){
+
+    .story-grid{
+        grid-template-columns:1fr;
+    }
+
+    .journey-story h2{
+        font-size:36px;
+    }
+
+}
