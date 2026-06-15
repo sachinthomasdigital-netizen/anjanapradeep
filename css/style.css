@@ -1,7 +1,3 @@
-/* =========================================
-ANJANA PRADEEP WEBSITE - FINAL CSS
-========================================= */
-
 :root{
 --primary:#067E44;
 --gold:#FFD700;
@@ -22,7 +18,7 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
 color:var(--dark);
 line-height:1.7;
 overflow-x:hidden;
@@ -34,9 +30,9 @@ max-width:1200px;
 margin:auto;
 }
 
-/* =========================================
+/* ==========================
 NAVIGATION
-========================================= */
+========================== */
 
 nav{
 background:var(--primary);
@@ -46,10 +42,10 @@ z-index:999;
 }
 
 .nav-container{
-height:80px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+height:80px;
 }
 
 .logo{
@@ -57,7 +53,6 @@ color:var(--white);
 text-decoration:none;
 font-size:28px;
 font-weight:700;
-letter-spacing:1px;
 }
 
 .menu{
@@ -69,34 +64,33 @@ gap:30px;
 color:var(--white);
 text-decoration:none;
 font-weight:600;
-transition:0.3s;
+transition:.3s;
 }
 
 .menu a:hover{
 color:var(--gold);
 }
 
-/* =========================================
+/* ==========================
 HERO SECTION
-========================================= */
+========================== */
 
 .hero{
 min-height:100vh;
+display:flex;
+align-items:center;
 
 ```
 background:
 linear-gradient(
-    rgba(6,126,68,.80),
-    rgba(6,126,68,.80)
+    rgba(6,126,68,.85),
+    rgba(6,126,68,.85)
 ),
-url("../banner.png (2).jpg");
+url("../banner.png");
 
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
-
-display:flex;
-align-items:center;
 ```
 
 }
@@ -174,9 +168,9 @@ margin-bottom:10px;
 color:#fff;
 }
 
-/* =========================================
+/* ==========================
 MISSION SECTION
-========================================= */
+========================== */
 
 .mission-section{
 background:#f5f6f8;
@@ -188,14 +182,12 @@ color:#f59e0b;
 font-size:14px;
 font-weight:700;
 letter-spacing:3px;
-text-transform:uppercase;
 }
 
 .mission-section h2{
 font-size:56px;
 margin:20px 0;
 line-height:1.2;
-color:var(--dark);
 }
 
 .mission-section h2 span{
@@ -206,7 +198,6 @@ color:var(--primary);
 max-width:1000px;
 color:var(--text);
 font-size:18px;
-line-height:1.9;
 margin-bottom:50px;
 }
 
@@ -229,18 +220,13 @@ color:var(--primary);
 margin-bottom:15px;
 }
 
-.mission-card p{
-color:var(--text);
-}
-
-/* =========================================
-MEET ANJANA SECTION
-========================================= */
+/* ==========================
+MEET ANJANA
+========================== */
 
 .meet-section{
-background:#ffffff;
+background:#fff;
 padding:120px 0;
-border-top:1px solid #e5e7eb;
 }
 
 .meet-grid{
@@ -254,16 +240,12 @@ color:#f59e0b;
 font-size:14px;
 font-weight:700;
 letter-spacing:3px;
-text-transform:uppercase;
-display:inline-block;
-margin-bottom:20px;
 }
 
 .meet-content h2{
 font-size:58px;
-line-height:1.2;
 margin:20px 0;
-color:var(--dark);
+line-height:1.2;
 }
 
 .meet-content h2 span{
@@ -272,9 +254,8 @@ color:var(--primary);
 
 .meet-description{
 color:var(--text);
-font-size:18px;
-line-height:1.9;
 margin-bottom:40px;
+font-size:18px;
 }
 
 .meet-cards{
@@ -285,8 +266,8 @@ gap:20px;
 
 .meet-card{
 background:#f9fafb;
-border-left:4px solid var(--primary);
 padding:25px;
+border-left:4px solid var(--primary);
 border-radius:12px;
 box-shadow:0 5px 20px rgba(0,0,0,.05);
 }
@@ -296,13 +277,9 @@ color:var(--primary);
 margin-bottom:10px;
 }
 
-.meet-card p{
-color:var(--text);
-}
-
-/* =========================================
+/* ==========================
 TIMELINE
-========================================= */
+========================== */
 
 .timeline{
 position:relative;
@@ -321,14 +298,14 @@ background:var(--primary);
 
 .timeline-item{
 position:relative;
-margin-bottom:45px;
+margin-bottom:40px;
 }
 
 .timeline-item::before{
 content:"";
 position:absolute;
 left:-38px;
-top:8px;
+top:6px;
 width:18px;
 height:18px;
 border-radius:50%;
@@ -344,73 +321,44 @@ letter-spacing:2px;
 }
 
 .timeline-item h4{
-color:var(--dark);
-font-size:22px;
-margin:8px 0;
+margin:10px 0;
 }
 
 .timeline-item p{
 color:var(--text);
-line-height:1.8;
 }
 
-/* =========================================
-IMPACT SECTION
-========================================= */
-
-.impact{
-padding:100px 0;
-text-align:center;
-background:#fff;
-}
-
-.impact h2{
-color:var(--primary);
-font-size:42px;
-margin-bottom:20px;
-}
-
-.impact p{
-max-width:900px;
-margin:auto;
-color:var(--text);
-}
-
-/* =========================================
+/* ==========================
 MEDIA SECTION
-========================================= */
+========================== */
 
 .media{
 padding:100px 0;
-text-align:center;
 background:#f5f6f8;
+text-align:center;
 }
 
 .media h2{
 color:var(--primary);
-font-size:42px;
 margin-bottom:20px;
 }
 
 .media p{
 max-width:900px;
 margin:auto;
-color:var(--text);
 }
 
-/* =========================================
-COLLABORATION SECTION
-========================================= */
+/* ==========================
+COLLABORATION
+========================== */
 
 .collaboration{
 padding:100px 0;
 text-align:center;
-background:#fff;
 }
 
 .collaboration h2{
 color:var(--primary);
-font-size:42px;
 margin-bottom:20px;
 }
 
@@ -418,12 +366,11 @@ margin-bottom:20px;
 max-width:900px;
 margin:auto;
 margin-bottom:30px;
-color:var(--text);
 }
 
-/* =========================================
+/* ==========================
 FOOTER
-========================================= */
+========================== */
 
 footer{
 background:var(--primary);
@@ -434,16 +381,15 @@ padding:60px 20px;
 
 footer h3{
 margin-bottom:10px;
-font-size:28px;
 }
 
 footer p{
-margin:10px 0;
+margin:8px 0;
 }
 
-/* =========================================
+/* ==========================
 MOBILE
-========================================= */
+========================== */
 
 @media(max-width:768px){
 
@@ -452,11 +398,6 @@ MOBILE
     flex-direction:column;
     height:auto;
     padding:20px 0;
-}
-
-.logo{
-    margin-bottom:15px;
-    text-align:center;
 }
 
 .menu{
@@ -488,7 +429,8 @@ MOBILE
 
 .hero-stats{
     flex-direction:column;
-    gap:20px;
+    gap:25px;
+    text-align:center;
 }
 
 .mission-grid,
