@@ -143,14 +143,17 @@ transition:.3s;
 }
 
 .hero-buttons a:first-child{
-background:#fff;
-color:var(--primary);
+    background:#fff;
+    color:var(--primary);
 }
 
-.hero-buttons a:last-child
+.hero-buttons a:last-child{
+    border:2px solid #fff;
+    color:#fff;
+}
 
 .hero-buttons a:hover{
-transform:translateY(-2px);
+    transform:translateY(-2px);
 }
 
 .hero-stats{
