@@ -75,24 +75,56 @@ color:var(--gold);
 HERO SECTION
 ========================== */
 
-.hero{
-min-height:100vh;
-display:flex;
-align-items:center;
+@media(max-width:768px){
 
-```
-background:
-linear-gradient(
-    rgba(6,126,68,.85),
-    rgba(6,126,68,.85)
-),
-url("../banner.png%20(2).jpg");
+    .nav-container{
+        flex-direction:column;
+        height:auto;
+        padding:20px 0;
+    }
 
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-```
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
 
+    .hero{
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero h2{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero-stats{
+        flex-direction:column;
+        gap:25px;
+        text-align:center;
+    }
+
+    .mission-grid,
+    .meet-grid{
+        grid-template-columns:1fr;
+    }
+
+    .mission-section h2,
+    .meet-content h2{
+        font-size:36px;
+    }
 }
 
 .hero-content{
