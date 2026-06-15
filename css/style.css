@@ -1,9 +1,10 @@
 :root{
     --primary:#067E44;
-    --white:#ffffff;
     --gold:#FFD700;
+    --white:#ffffff;
     --dark:#1f2937;
-    --light:#f8f9fa;
+    --light:#f5f6f8;
+    --text:#4b5563;
 }
 
 *{
@@ -13,7 +14,7 @@
 }
 
 body{
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
     color:var(--dark);
     line-height:1.7;
     overflow-x:hidden;
@@ -22,16 +23,15 @@ body{
 .container{
     width:90%;
     max-width:1200px;
-    margin:0 auto;
+    margin:auto;
 }
 
-/* ==========================
+/* ======================
    NAVIGATION
-========================== */
+====================== */
 
 nav{
     background:var(--primary);
-    width:100%;
 }
 
 .nav-container{
@@ -46,7 +46,6 @@ nav{
     text-decoration:none;
     font-size:28px;
     font-weight:700;
-    letter-spacing:1px;
 }
 
 .menu{
@@ -58,21 +57,18 @@ nav{
     color:#fff;
     text-decoration:none;
     font-weight:600;
-    transition:.3s;
 }
 
 .menu a:hover{
     color:var(--gold);
 }
 
-/* ==========================
-   HERO SECTION
-========================== */
+/* ======================
+   HERO
+====================== */
 
 .hero{
     min-height:100vh;
-    display:flex;
-    align-items:center;
 
     background:
     linear-gradient(
@@ -84,6 +80,9 @@ nav{
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
+
+    display:flex;
+    align-items:center;
 }
 
 .hero-content{
@@ -93,12 +92,10 @@ nav{
 
 .badge{
     display:inline-block;
-    background:rgba(255,255,255,.15);
     padding:12px 25px;
     border-radius:50px;
+    background:rgba(255,255,255,.15);
     margin-bottom:25px;
-    color:#fff;
-    font-size:14px;
 }
 
 .hero h1{
@@ -120,8 +117,6 @@ nav{
     color:#fff;
 }
 
-/* BUTTONS */
-
 .hero-buttons{
     display:flex;
     gap:20px;
@@ -133,7 +128,6 @@ nav{
     padding:15px 35px;
     border-radius:50px;
     font-weight:700;
-    transition:.3s;
 }
 
 .hero-buttons a:first-child{
@@ -146,13 +140,6 @@ nav{
     color:#fff;
 }
 
-.hero-buttons a:last-child:hover{
-    background:#fff;
-    color:var(--primary);
-}
-
-/* STATS */
-
 .hero-stats{
     display:flex;
     gap:60px;
@@ -161,37 +148,32 @@ nav{
 .stat h3{
     color:var(--gold);
     font-size:50px;
-    margin-bottom:10px;
 }
 
 .stat p{
     color:#fff;
 }
 
-/* ==========================
-   MISSION SECTION
-========================== */
+/* ======================
+   MISSION
+====================== */
 
 .mission-section{
+    background:var(--light);
     padding:100px 0;
-    background:#fff;
 }
 
 .mission-tag{
-    display:inline-block;
-    color:#f5a623;
+    color:#f59e0b;
     font-size:14px;
     font-weight:700;
     letter-spacing:3px;
-    text-transform:uppercase;
-    margin-bottom:20px;
 }
 
 .mission-section h2{
-    font-size:54px;
+    font-size:56px;
+    margin:20px 0;
     line-height:1.2;
-    color:var(--dark);
-    margin-bottom:30px;
 }
 
 .mission-section h2 span{
@@ -200,9 +182,7 @@ nav{
 
 .mission-intro{
     max-width:1000px;
-    font-size:18px;
-    color:#555;
-    line-height:1.9;
+    color:var(--text);
     margin-bottom:50px;
 }
 
@@ -213,15 +193,11 @@ nav{
 }
 
 .mission-card{
-    background:#f8f8f8;
+    background:#fff;
     padding:30px;
     border-left:4px solid var(--primary);
     border-radius:10px;
-    transition:.3s;
-}
-
-.mission-card:hover{
-    transform:translateY(-5px);
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
 }
 
 .mission-card h3{
@@ -229,159 +205,64 @@ nav{
     margin-bottom:15px;
 }
 
-.mission-card p{
-    color:#555;
-}
-
-/* ==========================
-   IMPACT SECTION
-========================== */
-
-.impact{
-    padding:100px 0;
-    background:#f8f8f8;
-    text-align:center;
-}
-
-.impact h2{
-    color:var(--primary);
-    font-size:42px;
-    margin-bottom:20px;
-}
-
-/* ==========================
-   MEDIA SECTION
-========================== */
-
-.media{
-    padding:100px 0;
-    text-align:center;
-}
-
-.media h2{
-    color:var(--primary);
-    font-size:42px;
-    margin-bottom:20px;
-}
-
-/* ==========================
-   COLLABORATION
-========================== */
-
-.collaboration{
-    padding:100px 0;
-    background:#f8f8f8;
-    text-align:center;
-}
-
-.collaboration h2{
-    color:var(--primary);
-    font-size:42px;
-    margin-bottom:20px;
-}
-
-.collaboration p{
-    margin-bottom:30px;
-}
-
-/* ==========================
-   FOOTER
-========================== */
-
-footer{
-    background:var(--primary);
-    color:#fff;
-    text-align:center;
-    padding:60px 20px;
-}
-
-footer h3{
-    margin-bottom:10px;
-}
-
-footer p{
-    margin:8px 0;
-}
-
-/* ==========================
-   MOBILE
-========================== */
-
-@media(max-width:768px){
-
-    .nav-container{
-        flex-direction:column;
-        height:auto;
-        padding:20px 0;
-    }
-    /* ==========================
-   MEET ANJANA SECTION
-========================== */
+/* ======================
+   MEET ANJANA
+====================== */
 
 .meet-section{
-    background:#103d2e;
-    padding:120px 0;
-    color:#ffffff;
+    background:var(--light);
+    padding:100px 0;
 }
 
 .meet-grid{
     display:grid;
-    grid-template-columns:1.1fr 1fr;
-    gap:80px;
+    grid-template-columns:1.2fr 1fr;
+    gap:60px;
 }
 
 .meet-tag{
-    color:#FFD700;
-    font-size:13px;
+    color:#f59e0b;
+    font-size:14px;
     font-weight:700;
     letter-spacing:3px;
-    text-transform:uppercase;
-    display:inline-block;
-    margin-bottom:20px;
 }
 
 .meet-content h2{
     font-size:58px;
+    margin:20px 0;
     line-height:1.2;
-    color:#ffffff;
-    margin-bottom:25px;
 }
 
 .meet-content h2 span{
-    color:#FFD700;
+    color:var(--primary);
 }
 
 .meet-description{
-    color:#d8d8d8;
-    font-size:18px;
-    line-height:1.9;
+    color:var(--text);
     margin-bottom:40px;
 }
 
 .meet-cards{
-    display:flex;
-    flex-direction:column;
+    display:grid;
     gap:20px;
 }
 
 .meet-card{
-    background:rgba(255,255,255,0.05);
-    border-left:4px solid #FFD700;
+    background:#fff;
     padding:25px;
+    border-left:4px solid var(--primary);
     border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
 }
 
 .meet-card h3{
-    color:#FFD700;
+    color:var(--primary);
     margin-bottom:10px;
-    font-size:18px;
 }
 
-.meet-card p{
-    color:#d8d8d8;
-}
-
-/* Timeline */
+/* ======================
+   TIMELINE
+====================== */
 
 .timeline{
     position:relative;
@@ -395,7 +276,7 @@ footer p{
     top:0;
     width:2px;
     height:100%;
-    background:#FFD700;
+    background:var(--primary);
 }
 
 .timeline-item{
@@ -407,52 +288,84 @@ footer p{
     content:"";
     position:absolute;
     left:-38px;
-    top:8px;
+    top:6px;
     width:18px;
     height:18px;
-    border:3px solid #FFD700;
     border-radius:50%;
-    background:#103d2e;
+    background:#fff;
+    border:3px solid var(--primary);
 }
 
 .year{
-    color:#FFD700;
+    color:var(--primary);
     font-size:13px;
     font-weight:700;
     letter-spacing:2px;
 }
 
 .timeline-item h4{
-    color:#ffffff;
-    margin:8px 0;
-    font-size:22px;
+    margin:10px 0;
 }
 
 .timeline-item p{
-    color:#d8d8d8;
-    line-height:1.8;
+    color:var(--text);
 }
 
-/* MOBILE */
+/* ======================
+   IMPACT
+====================== */
+
+.impact,
+.media,
+.collaboration{
+    padding:100px 0;
+    text-align:center;
+}
+
+.impact{
+    background:#fff;
+}
+
+.media{
+    background:var(--light);
+}
+
+.collaboration{
+    background:#fff;
+}
+
+.impact h2,
+.media h2,
+.collaboration h2{
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+/* ======================
+   FOOTER
+====================== */
+
+footer{
+    background:var(--primary);
+    color:#fff;
+    text-align:center;
+    padding:60px 20px;
+}
+
+footer p{
+    margin:10px 0;
+}
+
+/* ======================
+   MOBILE
+====================== */
 
 @media(max-width:768px){
 
-    .meet-grid{
-        grid-template-columns:1fr;
-        gap:50px;
-    }
-
-    .meet-content h2{
-        font-size:38px;
-    }
-
-    .timeline{
-        padding-left:30px;
-    }
-}
-
-    .logo{
-        margin-bottom:15px;
+    .nav-container{
+        flex-direction:column;
+        height:auto;
+        padding:20px 0;
     }
 
     .menu{
@@ -484,14 +397,16 @@ footer p{
 
     .hero-stats{
         flex-direction:column;
-        gap:25px;
+        gap:20px;
     }
 
-    .mission-section h2{
-        font-size:34px;
-    }
-
-    .mission-grid{
+    .mission-grid,
+    .meet-grid{
         grid-template-columns:1fr;
+    }
+
+    .mission-section h2,
+    .meet-content h2{
+        font-size:36px;
     }
 }
