@@ -314,6 +314,142 @@ footer p{
         height:auto;
         padding:20px 0;
     }
+    /* ==========================
+   MEET ANJANA SECTION
+========================== */
+
+.meet-section{
+    background:#103d2e;
+    padding:120px 0;
+    color:#ffffff;
+}
+
+.meet-grid{
+    display:grid;
+    grid-template-columns:1.1fr 1fr;
+    gap:80px;
+}
+
+.meet-tag{
+    color:#FFD700;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    display:inline-block;
+    margin-bottom:20px;
+}
+
+.meet-content h2{
+    font-size:58px;
+    line-height:1.2;
+    color:#ffffff;
+    margin-bottom:25px;
+}
+
+.meet-content h2 span{
+    color:#FFD700;
+}
+
+.meet-description{
+    color:#d8d8d8;
+    font-size:18px;
+    line-height:1.9;
+    margin-bottom:40px;
+}
+
+.meet-cards{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.meet-card{
+    background:rgba(255,255,255,0.05);
+    border-left:4px solid #FFD700;
+    padding:25px;
+    border-radius:10px;
+}
+
+.meet-card h3{
+    color:#FFD700;
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.meet-card p{
+    color:#d8d8d8;
+}
+
+/* Timeline */
+
+.timeline{
+    position:relative;
+    padding-left:40px;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:10px;
+    top:0;
+    width:2px;
+    height:100%;
+    background:#FFD700;
+}
+
+.timeline-item{
+    position:relative;
+    margin-bottom:40px;
+}
+
+.timeline-item::before{
+    content:"";
+    position:absolute;
+    left:-38px;
+    top:8px;
+    width:18px;
+    height:18px;
+    border:3px solid #FFD700;
+    border-radius:50%;
+    background:#103d2e;
+}
+
+.year{
+    color:#FFD700;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.timeline-item h4{
+    color:#ffffff;
+    margin:8px 0;
+    font-size:22px;
+}
+
+.timeline-item p{
+    color:#d8d8d8;
+    line-height:1.8;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .meet-grid{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    .meet-content h2{
+        font-size:38px;
+    }
+
+    .timeline{
+        padding-left:30px;
+    }
+}
 
     .logo{
         margin-bottom:15px;
