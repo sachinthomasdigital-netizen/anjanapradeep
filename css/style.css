@@ -3,8 +3,9 @@
     --white:#ffffff;
     --gold:#FFD700;
     --dark:#1f2937;
-    --light:#f8f9fa;
 }
+
+/* RESET */
 
 *{
     margin:0;
@@ -16,13 +17,12 @@ body{
     font-family:Arial, sans-serif;
     color:var(--dark);
     line-height:1.7;
-    overflow-x:hidden;
 }
 
 .container{
     width:90%;
     max-width:1200px;
-    margin:0 auto;
+    margin:auto;
 }
 
 /* ==========================
@@ -33,14 +33,15 @@ nav{
     background:var(--primary);
     height:80px;
     display:flex;
+    justify-content:space-between;
     align-items:center;
-    position:relative;
     padding:0 40px;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 .logo{
-    position:absolute;
-    left:30px;
     color:#fff;
     text-decoration:none;
     font-size:24px;
@@ -49,10 +50,8 @@ nav{
 }
 
 .menu{
-    width:100%;
     display:flex;
-    justify-content:center;
-    gap:35px;
+    gap:30px;
 }
 
 .menu a{
@@ -71,100 +70,109 @@ nav{
 ========================== */
 
 .hero{
-    background:var(--primary);
     min-height:100vh;
     display:flex;
     align-items:center;
-    padding:80px 0;
+
+    background:
+    linear-gradient(
+        rgba(6,126,68,0.75),
+        rgba(6,126,68,0.75)
+    ),
+    url("../banner.png (2).jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
-.hero-wrapper{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:80px;
-}
-
-.hero-left{
-    flex:1;
+.hero-content{
+    max-width:700px;
     color:#fff;
 }
 
-.hero-right{
-    flex:1;
-    display:flex;
-    justify-content:center;
-}
-
-.hero-right img{
-    width:450px;
-    height:550px;
-    object-fit:cover;
-    border-radius:25px;
-    box-shadow:0 20px 40px rgba(0,0,0,.25);
-}
-
-.hero-tag{
+.badge{
     display:inline-block;
-    border:1px solid var(--gold);
-    color:var(--gold);
-    padding:10px 25px;
+    background:rgba(255,255,255,0.15);
+    color:#fff;
+    padding:12px 25px;
     border-radius:50px;
     margin-bottom:25px;
     font-size:14px;
-    font-weight:600;
 }
 
 .hero h1{
-    font-size:68px;
+    font-size:72px;
     line-height:1.1;
-    margin-bottom:25px;
+    margin-bottom:20px;
+    color:#fff;
     font-weight:800;
 }
 
-.hero h1 span{
-    color:var(--gold);
+.hero h2{
+    font-size:42px;
+    margin-bottom:25px;
+    color:#fff;
 }
 
 .hero p{
     font-size:20px;
-    line-height:1.8;
     margin-bottom:35px;
+    color:#fff;
     max-width:650px;
 }
+
+/* ==========================
+   HERO BUTTONS
+========================== */
 
 .hero-buttons{
     display:flex;
     gap:20px;
-    margin-bottom:50px;
+    margin-top:20px;
+    margin-bottom:60px;
 }
 
-.btn-primary{
-    background:var(--gold);
-    color:var(--primary);
-    padding:16px 35px;
+.hero-buttons a{
+    display:inline-block;
     text-decoration:none;
+    padding:15px 35px;
     border-radius:50px;
     font-weight:700;
+    transition:.3s;
 }
 
-.btn-secondary{
+.hero-buttons a:first-child{
+    background:#fff;
+    color:var(--primary);
+}
+
+.hero-buttons a:first-child:hover{
+    background:#f3f3f3;
+}
+
+.hero-buttons a:last-child{
     border:2px solid #fff;
     color:#fff;
-    padding:16px 35px;
-    text-decoration:none;
-    border-radius:50px;
-    font-weight:700;
 }
+
+.hero-buttons a:last-child:hover{
+    background:#fff;
+    color:var(--primary);
+}
+
+/* ==========================
+   HERO STATS
+========================== */
 
 .hero-stats{
     display:flex;
-    gap:50px;
+    gap:60px;
 }
 
 .stat h3{
     color:var(--gold);
-    font-size:48px;
+    font-size:52px;
     margin-bottom:10px;
 }
 
@@ -189,13 +197,27 @@ nav{
     gap:80px;
 }
 
+.about-image{
+    flex:1;
+    text-align:center;
+}
+
+.about-image img{
+    width:100%;
+    max-width:420px;
+    height:520px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
 .about-content{
     flex:1;
 }
 
 .about-content h2{
     color:var(--primary);
-    font-size:48px;
+    font-size:42px;
     margin-bottom:25px;
 }
 
@@ -210,33 +232,19 @@ nav{
     background:var(--primary);
     color:#fff;
     text-decoration:none;
-    padding:14px 35px;
+    padding:14px 30px;
     border-radius:8px;
     font-weight:700;
 }
 
-.about-image{
-    flex:1;
-    display:flex;
-    justify-content:center;
-}
-
-.about-image img{
-    width:400px;
-    height:400px;
-    object-fit:cover;
-    border-radius:20px;
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
-}
-
 /* ==========================
-   IMPACT SECTION
+   IMPACT
 ========================== */
 
 .impact{
     padding:100px 20px;
-    background:#f8f8f8;
     text-align:center;
+    background:#f8f8f8;
 }
 
 .impact h2{
@@ -248,11 +256,10 @@ nav{
 .impact p{
     max-width:900px;
     margin:auto;
-    font-size:18px;
 }
 
 /* ==========================
-   MEDIA SECTION
+   MEDIA
 ========================== */
 
 .media{
@@ -269,17 +276,16 @@ nav{
 .media p{
     max-width:900px;
     margin:auto;
-    font-size:18px;
 }
 
 /* ==========================
-   COLLABORATION SECTION
+   COLLABORATION
 ========================== */
 
 .collaboration{
     padding:100px 20px;
-    background:#f8f8f8;
     text-align:center;
+    background:#f8f8f8;
 }
 
 .collaboration h2{
@@ -292,7 +298,6 @@ nav{
     max-width:900px;
     margin:auto;
     margin-bottom:30px;
-    font-size:18px;
 }
 
 /* ==========================
@@ -326,29 +331,27 @@ footer p{
         padding:20px;
     }
 
-    .logo{
-        position:static;
-        margin-bottom:15px;
-    }
-
     .menu{
         flex-wrap:wrap;
         justify-content:center;
         gap:15px;
+        margin-top:15px;
     }
 
-    .hero-wrapper{
-        flex-direction:column-reverse;
+    .hero{
         text-align:center;
     }
 
-    .hero-right img{
-        width:280px;
-        height:350px;
+    .hero-content{
+        max-width:100%;
     }
 
     .hero h1{
         font-size:42px;
+    }
+
+    .hero h2{
+        font-size:28px;
     }
 
     .hero p{
@@ -362,20 +365,21 @@ footer p{
 
     .hero-stats{
         flex-direction:column;
+        text-align:center;
         gap:25px;
     }
 
     .about-section{
-        flex-direction:column-reverse;
+        flex-direction:column;
         text-align:center;
     }
 
     .about-image img{
-        width:280px;
-        height:280px;
+        max-width:300px;
+        height:380px;
     }
 
     .about-content h2{
-        font-size:36px;
+        font-size:34px;
     }
 }
