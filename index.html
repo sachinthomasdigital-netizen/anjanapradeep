@@ -433,27 +433,111 @@
 
         </div>
 
-    </section>
+   /* ==========================
+   FOOTER
+========================== */
 
-    <!-- Footer -->
+.footer{
+    background:#022f20;
+    color:#fff;
+    padding:80px 0 30px;
+}
 
-    <footer>
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:50px;
+}
 
-        <h3>Anjana Pradeep</h3>
+.footer-brand h3{
+    font-size:36px;
+    margin-bottom:15px;
+}
 
-        <p>Educator • Mentor • Speaker • Founder</p>
+.footer-brand h3 span{
+    color:#f59e0b;
+}
 
-        <p>
-            Building Futures Through Guidance,
-            Learning & Inspiration
-        </p>
+.footer-brand p{
+    color:rgba(255,255,255,.8);
+    margin-bottom:8px;
+}
 
-        <p>
-            © 2026 Anjana Pradeep. All Rights Reserved.
-        </p>
+.footer-social{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
 
-    </footer>
+.footer-social a{
+    width:45px;
+    height:45px;
+    border:1px solid #f59e0b;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    color:#fff;
+    transition:.3s;
+}
 
-</body>
+.footer-social a:hover{
+    background:#f59e0b;
+}
 
-</html>
+.footer h4{
+    margin-bottom:20px;
+    color:#fff;
+}
+
+.footer ul{
+    list-style:none;
+}
+
+.footer ul li{
+    margin-bottom:12px;
+}
+
+.footer ul li a{
+    color:rgba(255,255,255,.8);
+    text-decoration:none;
+}
+
+.footer ul li a:hover{
+    color:#f59e0b;
+}
+
+.footer-bottom{
+    margin-top:50px;
+    padding-top:25px;
+    border-top:1px solid rgba(255,255,255,.1);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.footer-bottom p{
+    color:rgba(255,255,255,.7);
+}
+
+.footer-bottom a{
+    color:#f59e0b;
+    text-decoration:none;
+    font-weight:600;
+}
+
+@media(max-width:768px){
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+}
