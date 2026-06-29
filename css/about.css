@@ -936,3 +936,210 @@ ANJION LEARNING SECTION
   font-size: 11px; font-weight: 600;
   letter-spacing: 1px; text-transform: uppercase;
   padding: 14px 32px; cursor: pointer;
+/*==================================================
+MY STORY SECTION
+==================================================*/
+
+.story-section{
+    padding:110px 0;
+    background:#F8F8F4;
+}
+
+.story-wrapper{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:70px;
+    align-items:start;
+}
+
+.story-tag{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:25px;
+}
+
+.story-tag span{
+    width:35px;
+    height:2px;
+    background:#F5A623;
+}
+
+.story-tag p{
+    color:#F5A623;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:4px;
+    text-transform:uppercase;
+}
+
+.story-title{
+    font-family:'Playfair Display',serif;
+    font-size:60px;
+    line-height:1.15;
+    color:#1E3A2F;
+    margin-bottom:30px;
+}
+
+.story-title span{
+    display:block;
+    color:#F5A623;
+}
+
+.story-left p{
+    color:#555;
+    font-size:17px;
+    line-height:2;
+    margin-bottom:24px;
+}
+
+.story-intro:first-letter{
+    float:left;
+    font-family:'Playfair Display',serif;
+    font-size:72px;
+    color:#F5A623;
+    line-height:.8;
+    padding-right:10px;
+}
+
+/*==========================
+RIGHT SIDE
+==========================*/
+
+.quote-card{
+    background:#1E3A2F;
+    padding:40px;
+    border-radius:22px;
+    color:#fff;
+    margin-bottom:25px;
+    position:relative;
+    overflow:hidden;
+}
+
+.quote-icon{
+    position:absolute;
+    top:15px;
+    left:20px;
+    font-size:90px;
+    color:rgba(245,166,35,.12);
+    font-family:serif;
+}
+
+.quote-card p{
+    position:relative;
+    z-index:2;
+    font-size:18px;
+    line-height:2;
+    font-style:italic;
+}
+
+.quote-card h4{
+    margin-top:25px;
+    color:#F5A623;
+    font-size:12px;
+    letter-spacing:3px;
+}
+
+/*==========================
+FEATURE CARDS
+==========================*/
+
+.story-features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.story-card{
+    background:#fff;
+    border-top:3px solid #F5A623;
+    border-radius:14px;
+    padding:28px;
+    transition:.35s;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.story-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(30,58,47,.12);
+}
+
+.story-card-icon{
+    font-size:28px;
+    margin-bottom:18px;
+}
+
+.story-card h3{
+    color:#1E3A2F;
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.story-card p{
+    color:#666;
+    font-size:15px;
+    line-height:1.8;
+}
+
+/*==========================
+RESPONSIVE
+==========================*/
+
+@media(max-width:992px){
+
+.story-wrapper{
+
+grid-template-columns:1fr;
+gap:50px;
+
+}
+
+.story-title{
+
+font-size:46px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.story-section{
+
+padding:70px 20px;
+
+}
+
+.story-title{
+
+font-size:36px;
+
+}
+
+.story-features{
+
+grid-template-columns:1fr;
+
+}
+
+.story-left p{
+
+font-size:16px;
+
+}
+
+.quote-card{
+
+padding:30px;
+
+}
+
+.story-card{
+
+padding:22px;
+
+}
+
+}
