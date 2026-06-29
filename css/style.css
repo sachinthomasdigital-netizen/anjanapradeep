@@ -750,3 +750,101 @@ footer p{
     }
 
 }
+/* ===========================
+   TESTIMONIALS
+=========================== */
+
+.testimonials{
+    background:#0b5d3b;
+    padding:120px 0;
+}
+
+.testimonials .section-tag{
+    color:#f59e0b;
+    font-size:13px;
+    letter-spacing:4px;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+.testimonials h2{
+    font-size:58px;
+    color:#fff;
+    margin:20px 0 60px;
+    line-height:1.2;
+}
+
+.testimonials h2 span{
+    color:#f59e0b;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+}
+
+.testimonial-card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(245,158,11,.4);
+    border-radius:20px;
+    padding:35px;
+    transition:.3s;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+.stars{
+    color:#FFD700;
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.testimonial-card p{
+    color:#f2f2f2;
+    line-height:1.9;
+    margin-bottom:30px;
+}
+
+.student-info{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.student-avatar{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:#067E44;
+    border:2px solid #FFD700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+}
+
+.student-info h4{
+    color:#fff;
+    margin-bottom:5px;
+}
+
+.student-info span{
+    color:#cfcfcf;
+    font-size:14px;
+}
+
+@media(max-width:768px){
+
+    .testimonial-grid{
+        grid-template-columns:1fr;
+    }
+
+    .testimonials h2{
+        font-size:38px;
+    }
+
+}
