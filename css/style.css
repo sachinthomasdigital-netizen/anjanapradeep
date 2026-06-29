@@ -1033,3 +1033,178 @@ footer p{
 }
 
 }
+/*==================================
+Moments & Memories
+==================================*/
+
+.gallery-section{
+    background:#173629;
+    padding:120px 8%;
+}
+
+.gallery-section .container{
+    max-width:1280px;
+    margin:auto;
+}
+
+.gallery-heading{
+    margin-bottom:55px;
+}
+
+.gallery-heading span{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#F5A623;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:4px;
+    text-transform:uppercase;
+}
+
+.gallery-heading span::before{
+    content:"";
+    width:30px;
+    height:2px;
+    background:#F5A623;
+}
+
+.gallery-heading h2{
+    margin-top:20px;
+    color:#fff;
+    font-size:58px;
+    line-height:1.15;
+    font-family:"Playfair Display",serif;
+}
+
+.gallery-heading h2 strong{
+    color:#F5A623;
+    font-weight:700;
+}
+
+/* Grid */
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:1.1fr 1fr 1fr 1fr;
+
+    grid-template-rows:160px 160px;
+
+    gap:12px;
+
+}
+
+/* Images */
+
+.gallery-item{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:12px;
+
+    border:1px solid rgba(245,166,35,.5);
+
+    background:#2E5A46;
+
+}
+
+.gallery-item img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* Left */
+
+.large{
+
+    grid-row:span 2;
+
+}
+
+/* Bottom Wide */
+
+.wide{
+
+    grid-column:span 2;
+
+}
+
+/* Label */
+
+.tag{
+
+    position:absolute;
+
+    left:14px;
+
+    bottom:14px;
+
+    background:#1C3D2F;
+
+    color:#fff;
+
+    padding:7px 14px;
+
+    border-radius:5px;
+
+    font-size:11px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+grid-template-rows:auto;
+
+}
+
+.large,
+.wide{
+
+grid-column:auto;
+
+grid-row:auto;
+
+height:260px;
+
+}
+
+.gallery-item{
+
+height:220px;
+
+}
+
+.gallery-heading h2{
+
+font-size:42px;
+
+}
+
+}
