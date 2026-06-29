@@ -769,7 +769,7 @@ footer p{
 
 .testimonials h2{
     font-size:58px;
-    color:#fff;
+    color:#000000;
     margin:20px 0 60px;
     line-height:1.2;
 }
@@ -804,7 +804,7 @@ footer p{
 }
 
 .testimonial-card p{
-    color:#f2f2f2;
+    color:##000000;
     line-height:1.9;
     margin-bottom:30px;
 }
@@ -833,7 +833,7 @@ footer p{
 }
 
 .student-info span{
-    color:#cfcfcf;
+    color:#000000;
     font-size:14px;
 }
 
