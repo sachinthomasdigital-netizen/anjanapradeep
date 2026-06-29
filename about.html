@@ -116,44 +116,7 @@
 
     </section>
 
-    * ── PAGE HERO ── */
-.page-hero{background:var(--green);padding:64px 24px 0;position:relative;overflow:hidden;}
-.page-hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;}
-.ph-deco1{position:absolute;width:500px;height:500px;border-radius:50%;background:rgba(245,166,35,0.05);top:-150px;right:-100px;}
-.ph-deco2{position:absolute;width:200px;height:200px;border-radius:50%;background:rgba(245,166,35,0.06);bottom:0;left:-60px;}
-.ph-left{padding-bottom:56px;position:relative;z-index:2;}
-.breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:20px;}
-.breadcrumb span{color:var(--muted);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;}
-.breadcrumb .sep{color:var(--yellow);}
-.breadcrumb .cur{color:var(--yellow);}
-.ph-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,166,35,0.15);border:1px solid var(--border);border-radius:50px;padding:6px 18px;margin-bottom:18px;}
-.ph-badge span{color:var(--yellow);font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;}
-.ph-title{font-family:'Playfair Display',serif;color:#fff;font-size:clamp(32px,5vw,52px);font-weight:700;line-height:1.1;margin-bottom:8px;}
-.ph-title .yl{color:var(--yellow);}
-.ph-name-sub{font-family:'Playfair Display',serif;color:var(--muted);font-size:16px;font-style:italic;margin-bottom:22px;}
-.ph-roles{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px;}
-.ph-role{background:rgba(255,255,255,0.08);border:1px solid var(--border);color:var(--light);font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:6px 14px;border-radius:4px;}
-.ph-quote{border-left:3px solid var(--yellow);padding-left:16px;margin-top:4px;}
-.ph-quote p{color:var(--light);font-size:13px;line-height:1.75;font-style:italic;}
-.ph-right{position:relative;z-index:2;display:flex;justify-content:center;}
-.ph-photo-wrap{position:relative;width:340px;}
-.ph-photo{width:100%;height:420px;background:linear-gradient(160deg,var(--green-light),var(--green-mid));border-radius:16px 16px 0 0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--muted);gap:10px;border:1px solid var(--border);border-bottom:none;}
-.ph-photo .pic-icon{font-size:52px;opacity:.5;}
-.ph-photo .pic-note{font-size:10px;letter-spacing:1px;opacity:.7;text-align:center;}
-.ph-photo-badge{position:absolute;bottom:20px;left:-24px;background:var(--yellow);color:var(--green);padding:12px 18px;border-radius:10px;font-size:11px;font-weight:700;box-shadow:0 4px 20px rgba(0,0,0,0.2);}
-.ph-photo-badge .num{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;display:block;line-height:1;}
-.ph-photo-badge2{position:absolute;top:20px;right:-20px;background:var(--green);border:1px solid var(--border);color:#fff;padding:10px 16px;border-radius:10px;font-size:10px;font-weight:600;letter-spacing:.5px;box-shadow:0 4px 20px rgba(0,0,0,0.3);}
-
-/* ── EYEBROW ── */
-.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
-.ey-line{width:28px;height:2px;background:var(--yellow);border-radius:2px;flex-shrink:0;}
-.ey-text{color:var(--yellow);font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;}
-.sec-heading{font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,36px);font-weight:700;line-height:1.2;margin-bottom:14px;color:var(--green);}
-.sec-heading .yl{color:var(--yellow);}
-.sec-heading-w{color:#fff;}
-.sec-body{color:var(--sub);font-size:13px;line-height:1.9;}
-
-/* ── INTRO STORY ── */
+  * ── INTRO STORY ── */
 .intro-sec{background:var(--white);padding:72px 24px;}
 .intro-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
 .intro-left{}
@@ -252,6 +215,313 @@
 .btn-g{background:var(--green);color:#fff;border:none;font-family:'Poppins',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:14px 32px;border-radius:50px;cursor:pointer;}
 .btn-o{background:transparent;border:1.5px solid var(--green);color:var(--green);font-family:'Poppins',sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;padding:14px 32px;border-radius:50px;cursor:pointer;}
 
+/* ── FOOTER ── */
+footer{background:#0D1F18;padding:44px 24px 0;}
+.footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px;}
+.f-logo{font-family:'Playfair Display',serif;color:#fff;font-size:20px;font-weight:700;margin-bottom:10px;}
+.f-logo span{color:var(--yellow);}
+.f-tag{color:var(--muted);font-size:10px;line-height:1.7;margin-bottom:16px;}
+.f-socials{display:flex;gap:8px;}
+.f-soc{width:30px;height:30px;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px;cursor:pointer;}
+.f-col h4{color:#fff;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:14px;}
+.f-link{color:var(--muted);font-size:10px;display:block;margin-bottom:9px;cursor:pointer;text-decoration:none;}
+.f-link:hover{color:var(--yellow);}
+.f-bottom{max-width:1100px;margin:32px auto 0;border-top:1px solid rgba(255,255,255,0.06);padding:14px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;}
+.f-copy,.f-made{color:var(--muted);font-size:9px;}
+.f-made span{color:var(--yellow);}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .nav-links,.nav-cta{display:none;}
+  .hamburger{display:flex;}
+  .mob-menu.open{display:flex;}
+  .page-hero-inner,.intro-inner,.beyond-inner,.vm-grid,.approach-grid{grid-template-columns:1fr;}
+  .ph-right{display:none;}
+  .pillars,.highlights{grid-template-columns:1fr;}
+  .stats-grid{grid-template-columns:repeat(2,1fr);}
+  .stat-box::after{display:none;}
+  .footer-inner{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:480px){
+  .stats-grid{grid-template-columns:1fr 1fr;}
+  .footer-inner{grid-template-columns:1fr;}
+  .f-bottom{flex-direction:column;text-align:center;}
+  .vm-grid{grid-template-columns:1fr;}
+  .cta-btns{flex-direction:column;align-items:stretch;padding:0 16px;}
+  .btn-y,.btn-g,.btn-o{text-align:center;}
+}
+
+/* ── PRINT ── */
+@media print{
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .hamburger,.mob-menu,nav{display:none!important;}
+  @page{margin:12mm;size:A4;}
+}
+</style>
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">Anjana <span>Maam</span></div>
+    <ul class="nav-links">
+      <li>Home</li>
+      <li class="active">About</li>
+      <li>Story</li>
+      <li>Media</li>
+      <li>Speaking</li>
+    </ul>
+    <button class="nav-cta">Connect Now</button>
+    <button class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mob-menu" id="mob">
+    <a>Home</a><a>About</a><a>Story</a><a>Media</a><a>Speaking</a>
+  </div>
+</nav>
+
+<!-- ── PAGE HERO ── -->
+<div class="page-hero">
+  <div class="ph-deco1"></div>
+  <div class="ph-deco2"></div>
+  <div class="page-hero-inner">
+    <div class="ph-left">
+      <div class="breadcrumb">
+        <span>Home</span>
+        <span class="sep">›</span>
+        <span class="cur">About</span>
+      </div>
+      <div class="ph-badge"><span>About Anjana Pradeep</span></div>
+      <h1 class="ph-title">Hello, I'm<br><span class="yl">Anjana Pradeep</span></h1>
+      <p class="ph-name-sub">Educator • Mentor • Founder of Anjion Learning</p>
+      <div class="ph-roles">
+        <span class="ph-role">🎓 Educator</span>
+        <span class="ph-role">💡 Mentor</span>
+        <span class="ph-role">🏫 Founder</span>
+        <span class="ph-role">🎤 Speaker</span>
+      </div>
+      <div class="ph-quote">
+        <p>"I believe that education has the power to transform lives. For me, teaching is more than a profession — it's a purpose."</p>
+      </div>
+    </div>
+    <div class="ph-right">
+      <div class="ph-photo-wrap">
+        <!-- Replace with: <img src="anjana-photo.jpg" style="width:100%;height:420px;object-fit:cover;border-radius:16px 16px 0 0;"> -->
+        <div class="ph-photo">
+          <div class="pic-icon">👤</div>
+          <div class="pic-note">Anjana Pradeep<br>Professional Photo</div>
+        </div>
+        <div class="ph-photo-badge">
+          <span class="num">10K+</span>
+          Students Mentored
+        </div>
+        <div class="ph-photo-badge2">
+          🏫 Founder<br>Anjion Learning
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── INTRO STORY ── -->
+<section class="intro-sec">
+  <div class="intro-inner">
+    <div class="intro-left">
+      <div class="eyebrow"><div class="ey-line"></div><span class="ey-text">My Story</span></div>
+      <h2 class="sec-heading">A Journey Driven by<br><span class="yl">Purpose & Passion</span></h2>
+      <p class="intro-para">
+        I believe that education has the power to transform lives. For me, teaching is more than a profession — it's a purpose. Every student has unique strengths, dreams, and potential, and I am passionate about helping them discover and develop those qualities.
+      </p>
+      <p class="intro-para" style="font-size:13.5px;line-height:1.9;color:var(--sub);margin-bottom:18px;">
+        My journey as an educator began with a simple belief: students don't just need lessons; they need guidance, encouragement, and someone who genuinely believes in their abilities.
+      </p>
+      <p class="intro-para" style="font-size:13.5px;line-height:1.9;color:var(--sub);">
+        Over the years, I have worked with students from diverse backgrounds, helping them overcome academic challenges, build confidence, and move closer to their goals.
+      </p>
+    </div>
+    <div class="intro-right">
+      <div class="belief-card">
+        <p>"Students don't just need lessons — they need guidance, encouragement, and someone who genuinely believes in their abilities. That is what I strive to be for every student I meet."</p>
+        <span class="attr">— Anjana Pradeep</span>
+      </div>
+      <div class="highlights">
+        <div class="hl-card">
+          <div class="hl-icon">🎯</div>
+          <div class="hl-title">Student-Centred</div>
+          <div class="hl-text">Every approach is tailored to the individual learner's strengths and goals.</div>
+        </div>
+        <div class="hl-card">
+          <div class="hl-icon">💡</div>
+          <div class="hl-title">Beyond Exams</div>
+          <div class="hl-text">Building confidence, resilience and lifelong curiosity — not just exam scores.</div>
+        </div>
+        <div class="hl-card">
+          <div class="hl-icon">🌱</div>
+          <div class="hl-title">Inclusive</div>
+          <div class="hl-text">Working with students from all backgrounds and learning abilities across Kerala.</div>
+        </div>
+        <div class="hl-card">
+          <div class="hl-icon">🤝</div>
+          <div class="hl-title">Lifelong Support</div>
+          <div class="hl-text">Guiding students even beyond classrooms — in career decisions and life choices.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── VISION & MISSION ── -->
+<section class="vm-sec">
+  <div class="vm-inner">
+    <div class="eyebrow"><div class="ey-line"></div><span class="ey-text">Vision & Mission</span></div>
+    <h2 class="sec-heading sec-heading-w">The Values That<br><span class="yl">Drive Everything</span></h2>
+    <div class="vm-grid">
+      <div class="vm-card vision">
+        <div class="vm-card-deco">🔭</div>
+        <div class="vm-label">Vision</div>
+        <div class="vm-heading">A Generation of Confident,<br>Empowered Learners</div>
+        <p class="vm-text">To create a generation of confident, skilled, and empowered learners who transform their dreams into meaningful achievements through education. A future where every student walks forward with clarity, courage, and capability.</p>
+      </div>
+      <div class="vm-card mission">
+        <div class="vm-card-deco">🚀</div>
+        <div class="vm-label">Mission</div>
+        <div class="vm-heading">Quality Education &<br>Mentorship for All</div>
+        <p class="vm-text">To make quality education, mentorship, and career guidance accessible through innovative learning, personal support, and lifelong inspiration. Every student, regardless of background, deserves the opportunity to grow, succeed, and lead.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── BEYOND TEXTBOOKS ── -->
+<section class="beyond-sec">
+  <div class="beyond-inner">
+    <div class="beyond-left">
+      <div class="eyebrow"><div class="ey-line"></div><span class="ey-text">Education Beyond Textbooks</span></div>
+      <h2 class="sec-heading">The Birth of<br><span class="yl">Anjion Learning</span></h2>
+      <p class="beyond-para">This vision led me to establish <strong>Anjion Learning</strong> — a learning community built on mentorship, personalised support, and meaningful education.</p>
+      <p class="beyond-para">Here, learning extends beyond textbooks and examinations. My focus is on nurturing confident thinkers, resilient learners, and future leaders.</p>
+      <p class="beyond-para">Whether I'm teaching in a classroom, mentoring a student, or speaking to aspiring learners, my mission remains the same — to <strong>inspire confidence, ignite curiosity, and empower every student.</strong></p>
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar-t">🧠 Confident Thinkers</div>
+          <div class="pillar-b">Building students who question, reason, and lead with clarity.</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-t">💪 Resilient Learners</div>
+          <div class="pillar-b">Teaching students to bounce back, adapt, and grow stronger.</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-t">🌟 Future Leaders</div>
+          <div class="pillar-b">Grooming every student to be a leader in their own field.</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-t">❤️ Personal Support</div>
+          <div class="pillar-b">Walking alongside each student as a guide and genuine mentor.</div>
+        </div>
+      </div>
+    </div>
+    <div class="beyond-right">
+      <div class="anjion-card">
+        <div class="anjion-logo-area">
+          <div class="anjion-logo-icon">A</div>
+          <div>
+            <div class="anjion-logo-text">Anjion <span>Learning</span></div>
+            <div class="anjion-logo-sub">Founded by Anjana Pradeep · Kerala</div>
+          </div>
+        </div>
+        <div class="anjion-features">
+          <div class="af"><div class="af-dot"></div><div class="af-text"><strong>Mentorship-First Approach</strong> — Every student gets personal attention, not just lessons.</div></div>
+          <div class="af"><div class="af-dot"></div><div class="af-text"><strong>Competitive Exam Guidance</strong> — PSC, banking, and government exam preparation tailored to Kerala students.</div></div>
+          <div class="af"><div class="af-dot"></div><div class="af-text"><strong>Career Counselling</strong> — Helping students find direction and make confident career decisions.</div></div>
+          <div class="af"><div class="af-dot"></div><div class="af-text"><strong>Community of Learners</strong> — A growing family of 10,000+ students who inspire each other.</div></div>
+          <div class="af"><div class="af-dot"></div><div class="af-text"><strong>Workshops & Speaking</strong> — Regular sessions, events and talks beyond the classroom.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── IMPACT STATS ── -->
+<section class="stats-sec">
+  <div class="stats-inner">
+    <h2 class="stats-heading">Impact in Numbers</h2>
+    <p class="stats-sub">Every number here represents a life touched, a dream encouraged, a future shaped.</p>
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="stat-num">10K+</div>
+        <div class="stat-label">Students<br>Mentored</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">500+</div>
+        <div class="stat-label">Career<br>Sessions</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">100+</div>
+        <div class="stat-label">Workshops<br>Conducted</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">1</div>
+        <div class="stat-label">Mission to<br>Inspire Millions</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MY APPROACH ── -->
+<section class="approach-sec">
+  <div class="approach-inner">
+    <div class="eyebrow"><div class="ey-line"></div><span class="ey-text">How I Teach</span></div>
+    <h2 class="sec-heading">My Approach to<br><span class="yl">Meaningful Education</span></h2>
+    <div class="approach-grid">
+      <div class="ap-card">
+        <div class="ap-num">01</div>
+        <div class="ap-icon">🎯</div>
+        <div class="ap-title">Understand Every Student</div>
+        <p class="ap-text">Before teaching, I listen. Understanding each student's background, learning style, strengths, and challenges helps me deliver education that truly resonates and produces results.</p>
+      </div>
+      <div class="ap-card featured">
+        <div class="ap-num">02</div>
+        <div class="ap-icon">💡</div>
+        <div class="ap-title">Inspire Confidence First</div>
+        <p class="ap-text">Knowledge matters, but confidence transforms. I build self-belief in every student before filling them with information — because a confident mind learns faster and retains longer.</p>
+      </div>
+      <div class="ap-card">
+        <div class="ap-num">03</div>
+        <div class="ap-icon">🚀</div>
+        <div class="ap-title">Guide Beyond the Classroom</div>
+        <p class="ap-text">My role doesn't end when the class does. I mentor students in career decisions, life challenges, and goal-setting — walking alongside them on the journey to their future.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PERSONAL NOTE ── -->
+<section class="note-sec">
+  <div class="note-inner">
+    <div class="note-qm">"</div>
+    <p class="note-text">
+      Whether I'm teaching in a classroom, mentoring a student, or speaking to aspiring learners, my mission remains the same — to <span class="yl">inspire confidence, ignite curiosity,</span> and empower every student I meet.
+    </p>
+    <div class="note-attr">— Anjana Pradeep, Founder · Anjion Learning</div>
+    <div class="note-sig">Anjana Pradeep</div>
+  </div>
+</section>
+
+<!-- ── FINAL CTA ── -->
+<section class="cta-sec">
+  <div class="cta-inner">
+    <div class="eyebrow" style="justify-content:center;"><div class="ey-line"></div><span class="ey-text">Let's Connect</span><div class="ey-line"></div></div>
+    <h2 class="cta-heading">Let's Shape the<br><span class="yl">Future Together</span></h2>
+    <p class="cta-sub">Every student deserves guidance, confidence, and opportunities.<br>Whether you're a student, parent, educator, or collaborator — I'd love to hear from you.</p>
+    <div class="cta-btns">
+      <button class="btn-y">Connect with Anjana</button>
+      <button class="btn-g">Join Anjion Learning</button>
+      <button class="btn-o">Invite for Speaking</button>
+    </div>
+  </div>
+</section>
 
 <!-- =========================================
 FOOTER
