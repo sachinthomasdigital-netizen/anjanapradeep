@@ -1071,23 +1071,148 @@ height:220px;
     padding:80px 0 0;
 }
 
-.footer .container{
-    max-width:1280px;
+/* Main */
+
+.footer-container{
+
+    width:90%;
+    max-width:1300px;
+
     margin:auto;
-    padding:0 30px;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+    gap:70px;
+
+    padding-bottom:60px;
+
 }
+
+/* Brand */
+
+.footer-brand h2{
+
+    font-size:38px;
+
+    margin-bottom:20px;
+
+    font-family:'Playfair Display',serif;
+
+}
+
+.footer-brand span{
+
+    color:#F4A11E;
+
+}
+
+.footer-brand p{
+
+    color:#CFCFCF;
+
+    margin:8px 0;
+
+    line-height:1.8;
+
+}
+
+/* Social */
+
+.footer-social{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+.footer-social a{
+
+    width:45px;
+
+    height:45px;
+
+    border:1px solid #F4A11E;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#F4A11E;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-social a:hover{
+
+    background:#F4A11E;
+
+    color:#173629;
+
+}
+
+/* Links */
+
+.footer-links h4{
+
+    margin-bottom:20px;
+
+    font-size:22px;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.footer-links a{
+
+    color:#CFCFCF;
+
+    text-decoration:none;
+
+    margin-bottom:14px;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#F4A11E;
+
+    padding-left:5px;
+
+}
+
+/* Bottom */
 
 .footer-bottom{
 
-    margin-top:60px;
-
     border-top:1px solid rgba(255,255,255,.08);
 
-    padding:22px 0;
+    width:90%;
 
-}
+    max-width:1300px;
 
-.footer-bottom-inner{
+    margin:auto;
+
+    padding:25px 0;
 
     display:flex;
 
@@ -1095,50 +1220,70 @@ height:220px;
 
     align-items:center;
 
-}
-
-.footer-bottom p{
-
     color:#CFCFCF;
 
-    margin:0;
-
-    font-size:15px;
-
 }
 
-.footer-bottom p span{
+.footer-bottom span{
 
     color:#F4A11E;
 
-    font-weight:600;
-
 }
 
-.footer-policy{
-
-    display:flex;
-
-    gap:18px;
-
-}
-
-.footer-policy a{
+.footer-bottom a{
 
     color:#CFCFCF;
 
     text-decoration:none;
 
+    margin:0 10px;
+
 }
 
-.footer-policy a:hover{
+.footer-bottom a:hover{
 
     color:#F4A11E;
 
 }
 
-.footer-policy span{
+/* Mobile */
 
-    color:#777;
+@media(max-width:992px){
+
+.footer-container{
+
+grid-template-columns:1fr 1fr;
+
+gap:40px;
+
+}
+
+.footer-bottom{
+
+flex-direction:column;
+
+gap:15px;
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.footer-social{
+
+justify-content:center;
+
+}
 
 }
