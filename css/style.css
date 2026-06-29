@@ -1040,172 +1040,40 @@ footer p{
 }
 
 .speaking-image{
-    min-height:420px;
-}
-
-}
-/*==================================
-Moments & Memories
-==================================*/
-
-.gallery-section{
-    background:#173629;
-    padding:120px 8%;
-}
-
-.gallery-section .container{
-    max-width:1280px;
-    margin:auto;
-}
-
-.gallery-heading{
-    margin-bottom:55px;
-}
-
-.gallery-heading span{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    color:#F5A623;
-    font-size:12px;
-    font-weight:600;
-    letter-spacing:4px;
-    text-transform:uppercase;
-}
-
-.gallery-heading span::before{
-    content:"";
-    width:30px;
-    height:2px;
-    background:#F5A623;
-}
-
-.gallery-heading h2{
-    margin-top:20px;
-    color:#fff;
-    font-size:58px;
-    line-height:1.15;
-    font-family:"Playfair Display",serif;
-}
-
-.gallery-heading h2 strong{
-    color:#F5A623;
-    font-weight:700;
-}
-
-/* Grid */
-
-.gallery-grid{
-    display:grid;
-    grid-template-columns:320px repeat(3,260px);
-    grid-template-rows:160px 160px;
-    gap:16px;
-    align-items:stretch;
-}
-
-}
-
-/* Images */
-
-.gallery-item{
-    position:relative;
-    overflow:hidden;
-    border-radius:14px;
-    border:1px solid rgba(245,166,35,.45);
-    min-height:160px;
-}
-
-.large{
-    min-height:336px;
-}
-
-.gallery-item img{
     width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
+    max-width:540px;
+    height:420px;
+
+    border:1.5px dashed #d8cbb7;
+    border-radius:18px;
+
+    background:#f7f3ed;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
 }
 
-.gallery-item:hover img{
-
-    transform:scale(1.08);
-
+.image-placeholder{
+    text-align:center;
+    color:#9a8f82;
 }
 
-/* Left */
-
-.large{
-
-    grid-row:span 2;
-
+.camera-icon{
+    font-size:38px;
+    margin-bottom:15px;
+    opacity:.6;
 }
 
-/* Bottom Wide */
-
-.wide{
-
-    grid-column:span 2;
-
+.image-placeholder p{
+    margin:0;
+    font-size:15px;
+    letter-spacing:1px;
 }
 
-/* Label */
-
-.tag{
-
-    position:absolute;
-
-    left:14px;
-
-    bottom:14px;
-
-    background:#1C3D2F;
-
-    color:#fff;
-
-    padding:7px 14px;
-
-    border-radius:5px;
-
-    font-size:11px;
-
-    letter-spacing:2px;
-
-    text-transform:uppercase;
-
-}
-
-/* Responsive */
-
-@media(max-width:992px){
-
-.gallery-grid{
-
-grid-template-columns:1fr;
-
-grid-template-rows:auto;
-
-}
-
-.large{
-    grid-row:1 / span 2;
-}
-
-.wide{
-    grid-column:2 / span 2;
-}
-
-}
-
-.gallery-item{
-
-height:220px;
-
-}
-
-.gallery-heading h2{
-
-font-size:42px;
-
-}
-
+.image-placeholder span{
+    font-size:13px;
+    color:#b3a797;
 }
