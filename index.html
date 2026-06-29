@@ -677,129 +677,94 @@
     </div>
 
 </section>
-<!-- =========================
-        FOOTER
-========================= -->
 
-<footer class="footer">
-
-    <div class="footer-container">
-
-        <!-- Brand -->
-
-        <div class="footer-brand">
-
-            <h2>
-                Anjana <span>Pradeep</span>
-            </h2>
-
-            <p>Educator • Founder • Mentor</p>
-
-            <p>Kerala's trusted learning voice.</p>
-
-            <div class="footer-social">
-
-                <a href="#"><i class="fab fa-instagram"></i></a>
-
-                <a href="#"><i class="fab fa-youtube"></i></a>
-
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-
-            </div>
-
-        </div>
-
-        <!-- Navigate -->
-
-        <div class="footer-column">
-
-            <h3>Navigate</h3>
-
-            <ul>
-
-                <li><a href="#home">Home</a></li>
-
-                <li><a href="#about">About</a></li>
-
-                <li><a href="#brand-story">Brand Story</a></li>
-
-                <li><a href="#gallery">Gallery</a></li>
-
-                <li><a href="#media">Media</a></li>
-
-            </ul>
-
-        </div>
-
-        <!-- Connect -->
-
-        <div class="footer-column">
-
-            <h3>Connect</h3>
-
-            <ul>
-
-                <li><a href="#">Speaking Invites</a></li>
-
-                <li><a href="#">Collaborations</a></li>
-
-                <li><a href="#">Mentorship</a></li>
-
-                <li><a href="#contact">Contact</a></li>
-
-            </ul>
-
-        </div>
-
-        <!-- Learning -->
-
-        <div class="footer-column">
-
-            <h3>Anjon Learning</h3>
-
-            <ul>
-
-                <li><a href="#">Courses</a></li>
-
-                <li><a href="#">Instagram</a></li>
-
-                <li><a href="#">YouTube</a></li>
-
-                <li><a href="#">Community</a></li>
-
-            </ul>
-
-        </div>
-
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="f-logo">Anjana <span>Maam</span></div>
+      <div class="f-tag">Educator · Founder · Mentor<br>Kerala's trusted learning voice.</div>
+      <div class="f-socials">
+        <div class="f-soc">📸</div>
+        <div class="f-soc">▶</div>
+        <div class="f-soc">💼</div>
+      </div>
     </div>
-
-    <!-- Bottom -->
-
-    <div class="footer-bottom">
-
-        <div class="footer-bottom-wrapper">
-
-            <p>
-
-                © 2026 <span>Anjana Pradeep</span>. All Rights Reserved.
-
-            </p>
-
-            <div class="footer-bottom-links">
-
-                <a href="#">Privacy Policy</a>
-
-                <span>|</span>
-
-                <a href="#">Terms &amp; Conditions</a>
-
-            </div>
-
-        </div>
-
+    <div>
+      <h4>Navigate</h4>
+      <a class="f-link" href="#">Home</a>
+      <a class="f-link" href="#">About</a>
+      <a class="f-link" href="#">Brand Story</a>
+      <a class="f-link" href="#">Gallery</a>
+      <a class="f-link" href="#">Media</a>
     </div>
-
+    <div>
+      <h4>Connect</h4>
+      <a class="f-link" href="#">Speaking Invites</a>
+      <a class="f-link" href="#">Collaborations</a>
+      <a class="f-link" href="#">Mentorship</a>
+      <a class="f-link" href="#">Contact</a>
+    </div>
+    <div>
+      <h4>Anjion Learning</h4>
+      <a class="f-link" href="#">Courses</a>
+      <a class="f-link" href="#">Instagram</a>
+      <a class="f-link" href="#">YouTube</a>
+      <a class="f-link" href="#">Community</a>
+    </div>
+  </div>
+  <div class="f-bottom">
+    <div class="f-copy">© 2025 Anjana Pradeep · anjanamaam.com</div>
+    <div class="f-made">Website by <span>Eternia Digital Solutions</span></div>
+  </div>
 </footer>
-<!-- ===========================
-        FOOTER END
-============================ -->
+
+<script>
+// Scroll fade-in
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      e.target.style.opacity='1';
+      e.target.style.transform='translateY(0)';
+    }
+  });
+},{threshold:0.08});
+document.querySelectorAll('section,.page-hero,.note-sec,.stats-sec').forEach(el=>{
+  el.style.opacity='0';
+  el.style.transform='translateY(28px)';
+  el.style.transition='opacity 0.65s ease,transform 0.65s ease';
+  obs.observe(el);
+});
+
+// Stat counter animation
+function animateCount(el, target, suffix=''){
+  let start=0;
+  const isText = isNaN(parseInt(target));
+  if(isText){el.textContent=target;return;}
+  const num=parseInt(target);
+  const dur=1800;
+  const step=dur/60;
+  const inc=num/60;
+  const timer=setInterval(()=>{
+    start+=inc;
+    if(start>=num){el.textContent=num+(suffix);clearInterval(timer);}
+    else{el.textContent=Math.floor(start)+(suffix);}
+  },step);
+}
+const statsObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      document.querySelectorAll('.stat-num').forEach(el=>{
+        const txt=el.textContent;
+        const num=txt.replace(/[^0-9]/g,'');
+        const suf=txt.replace(/[0-9]/g,'');
+        if(num) animateCount(el,parseInt(num),suf);
+      });
+      statsObs.disconnect();
+    }
+  });
+},{threshold:0.3});
+const statsEl=document.querySelector('.stats-grid');
+if(statsEl) statsObs.observe(statsEl);
+</script>
+</body>
+</html>
