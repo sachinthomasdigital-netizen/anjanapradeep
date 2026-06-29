@@ -1065,7 +1065,8 @@ height:220px;
  Footer Bottom
 ===========================*/
 
-.footer{
+..footer{
+    width:100%;
     background:#173629;
     color:#fff;
     padding:80px 0 0;
@@ -1074,20 +1075,10 @@ height:220px;
 /* Main */
 
 .footer-container{
-
-    width:90%;
-    max-width:1300px;
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:2fr 1fr 1fr 1fr;
-
-    gap:70px;
-
-    padding-bottom:60px;
-
+    width:100%;
+    max-width:1400px;
+    margin:0 auto;
+    padding:0 80px;
 }
 
 /* Brand */
@@ -1202,26 +1193,20 @@ height:220px;
 
 /* Bottom */
 
-.footer-bottom{
-
+..footer-bottom{
+    width:100%;
     border-top:1px solid rgba(255,255,255,.08);
+    margin-top:60px;
+}
 
-    width:90%;
-
-    max-width:1300px;
-
-    margin:auto;
-
-    padding:25px 0;
+.footer-bottom .footer-bottom-container{
+    max-width:1400px;
+    margin:0 auto;
+    padding:25px 80px;
 
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
-    color:#CFCFCF;
-
 }
 
 .footer-bottom span{
